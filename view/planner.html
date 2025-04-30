@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/componentes.css">
+    <script src="../assets/js/componentes.js"></script>
+</head>
+<body>
+    <!-- 06 Boxes (1-4 separado e 5/6 na mesma - 20% cada bloco)-->
+    
+
+    <div class="sidebar">
+        <div class="logo"></div>
+        <h2>Olá, Bem vindo @</h2>
+        <a href="#">Página Inicial</a>
+        <a onclick="toggleSubmenu()">Dashboard</a>
+        <div id="submenu-dashboard" class="submenu">
+          <a href="#">Visão Geral</a>
+          <a href="#">Relatórios</a>
+        </div>
+        <a href="#">Usuários</a>
+        <a href="#">Produtos</a>
+        <a href="#">Pedidos</a>
+        <a href="#">Configurações</a>
+        <a href="#">Sair</a>
+      </div>
+    
+      <div class="main-content">
+        <h1>Bem-vindo ao Painel</h1>
+        <p>O rato roeu a roupa do rei de roma só que Lorem Ipsum Dolor Sit Amet Consectetur</p>
+      </div>
+
+    <div class="container-planner"> <!-- ÚNICO PARA OS 6 BLOCOS CONTAINERS-->
+
+        <div id="container-01" class="box-planner">
+            <h1>Iniciar</h1><br><br>
+            <button onclick="document.getElementById('modalAdicionar').style.display='block'"><icone-adicionar></icone-adicionar></button>
+            <button onclick="renomearBox(this.parentElement.querySelector('h1'))"><icone-renomear></icone-renomear></button>
+            <br><br>
+            
+            <div class="conteudo">
+            <h3>Lorem Ipsum Dolor Sit Amet</h3>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <!-- Dentro do modal: Prazo Inicial | Prazo Final-->
+            
+            <button onclick="editarLabels(this.parentElement.querySelector('h3'))"><icone-editar>Editar</icone-editar></button>
+            <button onclick="apagarLabels()"><icone-excluir>Apagar</icone-excluir></button>
+            <button onclick="visualizar()"><icone-visualizar></icone-visualizar></button>
+            </div>
+            
+            <h3>Lorem Ipsum Dolor Sit Amet</h3>
+            <h4>Lorem Ipsum Dolor Sit Amet</h4>
+            <!-- Dentro do modal: Prazo Inicial | Prazo Final-->
+            
+            <div class="botoes-container01">
+            <button onclick="editarLabels(this.parentElement.querySelector('h3'))"><icone-editar>Editar</icone-editar></button>
+            <button onclick="apagarLabels()"><icone-excluir>Apagar</icone-excluir></button>
+            <button onclick="visualizar()"><icone-visualizar></icone-visualizar></button>
+            </div>
+            
+            <icone-tempo></icone-tempo>
+        </div>
+
+        <div id="container-02" class="box-planner">
+            <h1>Em Processo</h1><br><br>
+            <icone-adicionar></icone-adicionar>
+            <icone-renomear></icone-renomear><br><br>
+            <h3>Lorem Ipsum Dolor Sit Amet</h3>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <icone-editar></icone-editar>
+            <icone-excluir></icone-excluir>
+            <icone-visualizar></icone-visualizar>
+            <icone-tempo></icone-tempo>
+        </div>
+        
+        <div id="container-03" class="box-planner">
+            <h1>Finalizado</h1><br><br>
+            <icone-adicionar></icone-adicionar>
+            <icone-renomear></icone-renomear><br><br>
+            <h3>Lorem Ipsum Dolor Sit Amet</h3>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <icone-editar></icone-editar>
+            <icone-excluir></icone-excluir>
+            <icone-visualizar></icone-visualizar>
+            <icone-tempo></icone-tempo>
+        </div>
+        
+        <!-- 
+        <div id="container-04" class="box-planner">
+            <h1>Encerrado</h1><br><br>
+            <icone-adicionar></icone-adicionar>
+            <icone-renomear></icone-renomear><br><br>
+            <h3>Lorem Ipsum Dolor Sit Amet</h3>
+            <p>Lorem Ipsum Dolor Sit Amet</p>
+            <icone-editar></icone-editar>
+            <icone-excluir></icone-excluir>
+            <icone-visualizar></icone-visualizar>
+            <icone-tempo></icone-tempo>
+    </div>
+    -->
+       
+    <!-- 
+    <div id="container-05" class="box-calculadora">
+    <h1>Calculadora</h1>
+    <br><br>
+    <div class="visor-calc"></div>
+
+    <div class="Calculadora-Linha01">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    </div>
+
+    <div class="Calculadora-Linha02">
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    </div>
+
+    <div class="Calculadora-Linha03">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    </div>
+
+    <div class="Calculadora-Linha04">
+    <button>,</button>
+    <button>0</button>
+    <button>.</button>
+    </div><br>
+
+    <div class="Calculadora-Linha05">
+    <button><icone-soma></icone-soma></button>
+    <button><icone-subtracao></icone-subtracao></button>
+    <button><icone-multiplicacao></icone-multiplicacao></button>
+    <button><icone-divisao></icone-divisao></button>
+    </div>
+    
+    <button>CALCULAR</button>
+    </div>
+    -->
+
+    <div id="container-06" class="box-postit">
+    <h1>Anotações</h1>
+    <h3>Lorem Ipsum Dolor Sit Amet</h3>
+    <div class="botoes-postit">
+    <button class="PostIt1" onclick="mudarCorPost('yellow')"></button>
+    <button class="PostIt2" onclick="mudarCorPost('pink')"></button>
+    <button class="PostIt3" onclick="mudarCorPost('white')"></button>
+    <button class="PostIt4" onclick="mudarCorPost('SpringGreen')"></button>
+    <button class="PostIt5" onclick="mudarCorPost('lightblue')"></button>
+    <button class="PostIt6" onclick="mudarCorPost('wheat')"></button>
+    </div>
+    <textarea class="post-it" id="postIt" rows="25" placeholder="Escreva aqui"></textarea>
+    <button onclick="salvarPost()">Salvar</button>
+    <button onclick="limparPost()">Limpar</button>
+    <button>Nova Anotação</button>
+    </div>
+
+    <div id="container-modal-tarefas"></div>
+
+    </div>
+
+</body>
+</html>

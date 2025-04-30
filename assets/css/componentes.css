@@ -1,0 +1,87 @@
+/*  ARQUIVO PARA COMPONENTES DE FORMULÁRIO (BUTTON, LABEL, RADIO, INPUT...)
+(SEPARADO PARA UMA MELHOR ORGANIZAÇÃO DEVIDO A VARIEDADE DE  CLASSES)   */
+
+/* 1) ALTERAR COR DO POST-IT*/
+button.PostIt1{ /* Post-IT Amarelo */
+    background-color: yellow; width: 20px; height: 30px;
+}
+button.PostIt2{ /* Post-IT Rosa */
+    background-color: pink; width: 20px; height: 30px;
+}
+button.PostIt3{ /* Post-IT Branco */
+    background-color: white; border: 1px solid #000; width: 20px; height: 30px;
+}
+button.PostIt4{ /* Post-IT Verde */
+    background-color: SpringGreen; width: 20px; height: 30px;
+}
+button.PostIt5{ /* Post-IT Azul */
+    background-color: lightblue; width: 20px; height: 30px;
+}
+button.PostIt6{ /* Post-IT Dourado */
+    background-color: wheat; width: 20px; height: 30px;
+}
+
+/* 2) FORMULÁRIO DE CADASTRO - DISPLAY E ESPAÇAMENTO*/
+.cad_tarefas_cat{
+    display: flex;
+    gap: 20px;
+}
+
+.cad_tarefas_sub{
+    display: flex;
+    gap: 20px;
+}
+.cad_tarefas_dat{
+    display: flex;
+    gap: 20px;
+}
+
+/* Testar 2f2f2f 34495e preto f5f5dc 2c6e49 ff0066 roxo da logo*/
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #5a00b8;
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: fixed;
+  }
+
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ecf0f1;
+    transition: background 0.3s;
+    cursor: pointer;
+    display: block;
+  }
+
+  .sidebar a:hover {
+    background-color: white;
+    color: #5a00b8;
+  }
+
+  .submenu {
+    display: none;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.2)
+
+  }
+
+  .submenu a {
+    padding-left: 40px;
+    font-size: 14px;
+  }
+
+  .main-content {
+    margin-left: 300px;
+    padding: 20px;
+    width: 100%;
+  }

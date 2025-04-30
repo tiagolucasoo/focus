@@ -1,0 +1,58 @@
+tlg-admin/
+│
+├── controllers/        # Controladores (lógica entre Model e View)
+│   └── plannerController.js
+│
+├── models/             # Lógica de dados (banco, regras)
+│   └── plannerModel.js
+│
+├── views/              # HTML ou templates (EJS, Pug, Jinja2, etc.)
+│   ├── login.ejs
+│   ├── register.ejs
+│   ├── planner.ejs
+│   └── layout.ejs      # layout base com header/footer
+│
+├── routes/             # Rotas da aplicação
+│   └── plannerRoutes.js
+│
+├── assets/             # CSS, JS e imagens (ainda usados mesmo sem public)
+│   ├── css/
+│   ├── js/
+│   └── img/
+│
+├── app.js              # Arquivo principal que inicia o app
+├── package.json        # Dependências (Node.js)
+└── .env                # Variáveis de ambiente (porta, DB etc.)
+
+------------------------------
+1º Dia: 5 Arquivos
+3 Htmls (33 + 38 + 89 Linhas)
+1 JS (78 Linhas)
+1 CSS (85 Linhas)
+TOTAL: 323 Linhas
+------------------------------
+2º Dia: 5 Arquivos
+1 css 148
+3 html 38, 33 e 109 = 180
+1 js 118
+TOTAL: 446 Linhas
+------------------------------
+
+Fazer CSS Separado para Botões
+
+6 Boxes cada com 20%
+1-4: Planner (20/20/20/20)
+5: Calculadora
+6: Post-It
+
+1) BOX ANOTAÇÕES
+1.1) Adicionar (Modal)
+        Título
+        Descrição
+        Data Início
+        Data Fim
+        Categoria
+        Sub-Categoria
+
+1.1) Editar - Apenas o básico - Título e Descrição
+

@@ -1,0 +1,32 @@
+<div id="modalAdicionar">
+    <div class="teste2">
+        <h2>Título</h2>
+        <input type="text" placeholder="Digite aqui o nome da tarefa...">
+        <h2>Descrição da tarefa</h2>
+        <textarea class="modal" id="postIt" rows="3" placeholder="Escreva aqui"></textarea>
+
+        <div class="cad_tarefas_cat">
+        <h2>Selecione a categoria:</h2>
+        <label><input type="radio" name="categoria" value="1">Trabalho</label>
+        <label><input type="radio" name="categoria" value="2">Pessoal</label>
+        <label><input type="radio" name="categoria" value="2">Faculdade</label>
+        </div>
+        
+        <div class="cad_tarefas_sub">
+        <h2>Selecione a sub-categoria:</h2>
+        <label><input type="radio" name="categoria" value="1">Trabalho</label>
+        <label><input type="radio" name="categoria" value="2">Pessoal</label>
+        <label><input type="radio" name="categoria" value="2">Faculdade</label>
+        </div>
+
+        <div class="cad_tarefas_dat">
+        <h2>Início:</h2><input type="date" title="Digite aqui a data inicial da tarefa" style="width: 250px;">
+
+        <h2>Data Final:</h2><input type="date" title="Digite aqui a data final da tarefa" style="width: 250px;"></div>
+
+        <button>Salvar</button>
+        <button>Limpar</button>
+        <button onclick="document.getElementById('modalAdicionar').style.display='none'">Fechar</button>
+        
+    </div>
+</div>

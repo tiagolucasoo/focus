@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: white;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.dark-mode{
+    background: #121212;
+    color: white;
+}
+
+.logo{
+    background-image: url(../img/logo.png);
+    background-size: contain; /* A imagem será ajustada para se encaixar no elemento */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    width: 80%;
+    margin-left: 10%;
+    height: 150px; /* Defina uma altura específica para o elemento */
+}
+.logo:hover{
+    background-image: url(../img/logo2.png);
+}
+
+/* CAIXA DE LOGIN */
+#box-login {
+    position: relative;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* branco transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #5a00b8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7200d8;
+}
+
+.img_perfil{
+    background-color: #5a00b8;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.container-planner{
+    display: flex;
+    margin-left: 300px;
+    width: 100%;
+}
+
+.box-planner{
+    width: 22%;
+    padding: 10px 8px;
+    text-align: center;
+    /*border: 1px solid #ff0066;*/
+}
+
+.box-calculadora{
+    width: 16%;
+    padding: 10px 10px;
+    text-align: center;
+    /*border: 1px solid #ff0066;*/
+}
+
+.box-postit{
+    width: 16%;
+    padding: 20px;
+    text-align: center;
+    /*border: 1px solid #ff0066;*/
+}
+
+h1 {
+    color: #5a00b8;
+    position: relative;
+    display: inline-block;
+  }
+  
+h1::after,
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0066, #5a00b8);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out;
+  }
+  
+h1::before {
+    top: -5px;
+    transform-origin: left;
+  }
+  
+h1:hover::after,
+h1:hover::before {
+    transform: scaleX(1);
+  }
+
+textarea.post-it{
+    width: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea.modal{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.visor-calc{
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    height: 50px;
+}
+
+#modalAdicionar{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+/* block, inline, inline-block, none, table, grid, contents*/
+.conteudo{
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.conteudo:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button.conteudo{
+    display: flex;
+}
+
+.teste2{
+    position: relative;
+    width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* branco transparente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    text-align: center;
+}
