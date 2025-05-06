@@ -1,3 +1,9 @@
+fetch('modals/cad_tarefas.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('container-modal-tarefas').innerHTML = html;
+    });
+
 function importIcons(){ // Importar Icones
     const fontAwesome = document.createElement("link");
     fontAwesome.rel = "stylesheet";
@@ -156,12 +162,6 @@ function editarLabels(h3Element) {
         h3Element.contentEditable = false;
     });
 }
-
-fetch('modals/cad_tarefas.html')
-    .then(Response => Response.text())
-    .then(html => {
-        document.getElementById('container-modal-tarefas').innerHTML = html;
-    });
 
 function toggleSubmenu() {
     const submenu = document.getElementById('submenu-dashboard');
