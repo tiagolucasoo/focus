@@ -24,6 +24,15 @@ body, html {
     margin-left: 10%;
     height: 150px; /* Defina uma altura específica para o elemento */
 }
+.logobranca{
+    background-image: url(../img/logobranca.png);
+    background-size: contain; /* A imagem será ajustada para se encaixar no elemento */
+    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    background-position: center; /* Centraliza a imagem no fundo */
+    width: 80%;
+    margin-left: 10%;
+    height: 150px; /* Defina uma altura específica para o elemento */
+}
 .logo:hover{
     background-image: url(../img/logo2.png);
 }
@@ -191,4 +200,8 @@ button.conteudo{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     text-align: center;
+}
+
+h3{
+    padding: 5px;
 }

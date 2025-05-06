@@ -56,3 +56,6 @@ Fazer CSS Separado para Botões
 
 1.1) Editar - Apenas o básico - Título e Descrição
 
+Fazer arquivo do menu separado .css e .menu
+Primeira parte do menu
+Página Inicial
