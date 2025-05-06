@@ -168,5 +168,17 @@ function toggleSubmenu() {
     submenu.style.display = submenu.style.display === 'flex' ? 'none' : 'flex';
 }
 
+function testeLogin() {
+    const senha = document.getElementById('senha').value;
+    const email = document.getElementById('email').value;
+
+    if (email === "admin" && senha === "1234"){
+        alert("Logando...")
+        window.location.href = "planner.html";
+    } else {
+        alert("Erro!")
+    }
+}
+
 importIcons();
 defIcons();

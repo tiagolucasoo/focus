@@ -26,7 +26,6 @@ button.PostIt6{ /* Post-IT Dourado */
     display: flex;
     gap: 20px;
 }
-
 .cad_tarefas_sub{
     display: flex;
     gap: 20px;
@@ -36,8 +35,8 @@ button.PostIt6{ /* Post-IT Dourado */
     gap: 20px;
 }
 
-/* Testar 2f2f2f 34495e preto f5f5dc 2c6e49 ff0066 roxo da logo*/
-.sidebar {
+/* 3) CONFIGURAÇÕES DO MENU E SUB-MENU */
+.menu {
     width: 300px;
     height: 100vh;
     background-color: #5a00b8;
@@ -46,42 +45,53 @@ button.PostIt6{ /* Post-IT Dourado */
     flex-direction: column;
     padding-top: 20px;
     position: fixed;
-  }
+}
+.menu h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.menu a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #ecf0f1;
+  transition: background 0.3s;
+  cursor: pointer;
+  display: block;
+}
+.menu a:hover {
+  background-color: white;
+  color: #5a00b8;
+}
+.submenu {
+  display: none;
+  flex-direction: column;
+  background-color:rgba(0, 0, 0, 0.2)
+}
+.submenu a {
+  padding-left: 40px;
+  font-size: 14px;
+}
 
-  .sidebar h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 20px;
-  }
-
-  .sidebar a {
-    padding: 15px 20px;
-    text-decoration: none;
-    color: #ecf0f1;
-    transition: background 0.3s;
-    cursor: pointer;
-    display: block;
-  }
-
-  .sidebar a:hover {
-    background-color: white;
-    color: #5a00b8;
-  }
-
-  .submenu {
-    display: none;
-    flex-direction: column;
-    background-color:rgba(0, 0, 0, 0.2)
-
-  }
-
-  .submenu a {
-    padding-left: 40px;
-    font-size: 14px;
-  }
-
-  .main-content {
-    margin-left: 300px;
-    padding: 20px;
-    width: 100%;
-  }
+/* 4) Logotipo - Logo colorida, branca e para efeito hover*/
+.logo{
+  background-image: url(../img/logo.png);
+  background-size: contain; /* A imagem será ajustada para se encaixar no elemento */
+  background-repeat: no-repeat; /* Garante que a imagem não se repita */
+  background-position: center; /* Centraliza a imagem no fundo */
+  width: 80%;
+  margin-left: 10%;
+  height: 150px; /* Defina uma altura específica para o elemento */
+}
+.logobranca{
+  background-image: url(../img/logobranca.png);
+  background-size: contain; /* A imagem será ajustada para se encaixar no elemento */
+  background-repeat: no-repeat; /* Garante que a imagem não se repita */
+  background-position: center; /* Centraliza a imagem no fundo */
+  width: 80%;
+  margin-left: 10%;
+  height: 150px; /* Defina uma altura específica para o elemento */
+}
+.logo:hover{
+  background-image: url(../img/logo2.png);
+}

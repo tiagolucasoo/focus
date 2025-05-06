@@ -1,52 +1,72 @@
+/* 5) GERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body, html {
     background: white;
     height: 100%;
     font-family: Arial, sans-serif;
 }
 
-.dark-mode{
-    background: #121212;
-    color: white;
+/* 6) PÁGINA DE LOGIN */
+.background_login{
+    display: flex;
+    padding-top: 10%;
+    width: 100%;
+    height: 100%;
+    background: #5A00B8;
+    background: linear-gradient(93deg, rgba(90, 0, 184, 1) 0%, rgba(255, 0, 102, 0.77) 64%, rgba(255, 0, 102, 1) 100%);
 }
-
-.logo{
-    background-image: url(../img/logo.png);
-    background-size: contain; /* A imagem será ajustada para se encaixar no elemento */
-    background-repeat: no-repeat; /* Garante que a imagem não se repita */
-    background-position: center; /* Centraliza a imagem no fundo */
-    width: 80%;
-    margin-left: 10%;
-    height: 150px; /* Defina uma altura específica para o elemento */
-}
-.logobranca{
-    background-image: url(../img/logobranca.png);
-    background-size: contain; /* A imagem será ajustada para se encaixar no elemento */
-    background-repeat: no-repeat; /* Garante que a imagem não se repita */
-    background-position: center; /* Centraliza a imagem no fundo */
-    width: 80%;
-    margin-left: 10%;
-    height: 150px; /* Defina uma altura específica para o elemento */
-}
-.logo:hover{
-    background-image: url(../img/logo2.png);
-}
-
-/* CAIXA DE LOGIN */
-#box-login {
+.box_esquerdo{
     position: relative;
-    width: 300px;
-    margin: 100px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* branco transparente */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-left: 20%;
+    background-color: #fff;
+    width: 30%;
+    height: 80%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desenho_login{
+    background-image: url(/assets/img/draw_login.jpg);
+    background-size: cover; /* ou 'contain' dependendo do efeito desejado */
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.box_direito{
+    position: relative;
+    margin-right: 20%;
+    background-color: #fff;
+    width: 30%;
+    height: 80%;
+    padding: 25px;
     text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+h3.espacamento{
+    margin-top: 25px;
+}
+.box_email{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+.box_senha{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
 }
 
 input {
@@ -81,29 +101,30 @@ button:hover {
 
 .container-planner{
     display: flex;
-    margin-left: 300px;
-    width: 100%;
+    padding-left: 300px;
+    max-width: 100%;
 }
 
 .box-planner{
-    width: 22%;
+    width: 28%;
     padding: 10px 8px;
     text-align: center;
-    /*border: 1px solid #ff0066;*/
+    border: 1px solid #ff0066;
 }
 
 .box-calculadora{
-    width: 16%;
+    width: 20%;
+    margin-left: 300px;
     padding: 10px 10px;
     text-align: center;
-    /*border: 1px solid #ff0066;*/
+    border: 1px solid #ff0066;
 }
 
 .box-postit{
     width: 16%;
     padding: 20px;
     text-align: center;
-    /*border: 1px solid #ff0066;*/
+    border: 1px solid #ff0066;
 }
 
 h1 {
@@ -193,7 +214,8 @@ button.conteudo{
 
 .teste2{
     position: relative;
-    width: 800px;
+    width: 90%;
+    max-width: 800px;
     margin: 100px auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.9); /* branco transparente */
@@ -205,3 +227,8 @@ button.conteudo{
 h3{
     padding: 5px;
 }
+
+/*
+* {
+    outline: 1px solid red !important;
+}*/

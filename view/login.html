@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="../assets/css/estilo.css">
+    <link rel="stylesheet" href="../assets/css/componentes.css">
     <script src="../assets/js/componentes.js"></script>
 </head>
 <body>
-    
-    <div class="logo"></div>
-    <div id="box-login">
-    <h2>Faça o Seu login</h2>
-    <div class="img_perfil"></div>
-    
-    <h3>Seu e-mail:</h3>
-    <div class="email">
-    <icone-email></icone-email>
-    <input class="email" placeholder="Digite aqui...">
+    <div class="background_login">
+        
+        <div class="box_esquerdo">
+            <div class="desenho_login"></div>
+        </div>
+
+        <div class="box_direito">
+            <h2>Faça seu Login</h2>
+
+            <h3 class="espacamento">Seu e-mail:</h3>
+            <div class="box_email">
+                <icone-email></icone-email>
+                <input type="email" id="email" placeholder="Digite aqui...">
+            </div>
+
+            <h3 class="espacamento">Sua senha:</h3>
+            <div class="box_senha">
+                <icone-senha></icone-senha>
+                <input type="password" id="senha" placeholder="Digite aqui...">
+            </div>
+
+            <button onclick="testeLogin()">Entrar</button>
+            <button>Cadastrar</button>
+            <br><br>
+            <p>Esqueceu sua senha? <a href="#">Clique aqui!</a></p>
+        </div>
+        
     </div>
 
-    <h3>Sua senha:</h3>
-    <icone-senha></icone-senha>
-    <input class="pass" placeholder="Digite aqui...">
-
-    <button>Entrar</button>
-    <button>Cadastrar</button>
-    <br><br>
-    <p>Esqueceu sua senha? <a href="#">Clique aqui!</a></p>
-    </div>
-    <a href="registro.html">cad</a>
-    
 </body>
 </html>
